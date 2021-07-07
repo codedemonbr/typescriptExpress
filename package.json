@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "ts-node jest.startup.ts",
+    "compile": "tsc -w",
+    "start": "nodemon --unhandled-rejections=strict dist/app.js",
+    "debug": "export DEBUG=* && npm run start"
+},
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
