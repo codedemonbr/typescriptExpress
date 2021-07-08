@@ -8,8 +8,9 @@
     "compile": "tsc -w",
     "start": "nodemon --unhandled-rejections=strict dist/app.js",
     "debug": "export DEBUG=* && npm run start"
-},
+  },
   "dependencies": {
+    "argon2": "^0.28.2",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
@@ -18,12 +19,14 @@
     "express": "^4.17.1",
     "express-winston": "^4.1.0",
     "mongoose": "^5.13.2",
+    "shortid": "^2.2.16",
     "winston": "^3.3.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
     "@types/debug": "^4.1.6",
     "@types/express": "^4.17.12",
+    "@types/shortid": "^0.0.29",
     "@types/supertest": "^2.0.11",
     "jest": "^27.0.6",
     "jest-cli": "^27.0.6",
